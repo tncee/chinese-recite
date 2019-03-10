@@ -1,8 +1,8 @@
 ---
 home: true
 title: 首页
-heroText: 必备古诗词
-footer: Copyright © 2019 Nexmoe. All rights reserved.
+heroText: 必背古诗词
+footer: Made with ❤ by TNCEE
 ---
 
 <div class="item-list">
