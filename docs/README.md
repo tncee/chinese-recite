@@ -1,17 +1,42 @@
 ---
 home: true
 title: 首页
-heroImage: /hero.png
 heroText: 必备古诗词
-tagline: 副标题
-
 footer: Copyright © 2019 Nexmoe. All rights reserved.
 ---
-<div style="display: flex; flex-direction: column">
-    <div v-for="page of $site.pages.filter(item => item.path !== '/')" :key="page.key" style="padding: 20px 0; max-width: 33%;">
-        <router-link :to="page.path">
-            {{page.title}}
-            <div style="color: #c2c5cd; font-size: .5rem;">{{(page.frontmatter.tags || ['无标签']).join(',  ')}}</div>
-        </router-link>
-    </div>
+
+<div class="item-list">
+    <router-link :to="page.path" v-for="page of $site.pages.filter(item => item.path !== '/')" :key="page.key" class="item">
+        {{page.title}}
+        <br>
+        ---
+    </router-link>
+    <div style=""></div>
 </div>
+
+<style>
+    .item-list {
+        margin: -5px;
+        margin-bottom: 10px;
+    }
+    .item-list::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .item-list .item {
+        float: left;
+        width: calc(25% - 10px);
+        margin: 5px;
+        background-color: #3eaf7c;
+        color: #fff;
+        border-radius: 6px;
+        padding: 12px 16px;
+        box-sizing: border-box;
+    }
+    @media screen and (max-width:768px) {
+        .item-list .item {
+            width: calc(50% - 10px);
+        }
+    }
+</style>
