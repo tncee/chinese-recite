@@ -11,8 +11,12 @@ footer: Made with ❤ by TNCEE
         <br>
         ---
     </router-link>
-    <div style=""></div>
 </div>
+
+<details>
+<summary>HTML 5</summary>
+This document teaches you everything you have to learn about HTML 5.
+</details>
 
 <style>
     .item-list {
