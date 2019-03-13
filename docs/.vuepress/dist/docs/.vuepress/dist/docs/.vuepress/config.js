@@ -1,6 +1,5 @@
 module.exports = {
-  title: '必备古诗词',
-  description: '博客',
+  title: '必背古诗词',
   base: '/chinese-recite/',
   themeConfig: {
     nav: [{
