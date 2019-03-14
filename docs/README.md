@@ -13,11 +13,6 @@ footer: Made with ❤ by TNCEE
     </router-link>
 </div>
 
-<details>
-<summary>HTML 5</summary>
-This document teaches you everything you have to learn about HTML 5.
-</details>
-
 <style>
     .item-list {
         margin: -5px;

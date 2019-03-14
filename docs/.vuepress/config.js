@@ -1,8 +1,10 @@
 module.exports = {
   title: '必背古诗词',
+  description: '义务教育中必须背诵的古诗词',
   base: '/chinese-recite/',
   themeConfig: {
     lastUpdated: '最后编辑：',
+    
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'tncee/chinese-recite',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
