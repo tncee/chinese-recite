@@ -2,6 +2,8 @@
 home: true
 title: 首页
 heroText: 必背古诗词
+actionText: 快速开始
+actionLink: /senior/compulsory2/氓.html
 footer: Made with ❤ by TNCEE
 ---
 
