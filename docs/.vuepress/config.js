@@ -5,7 +5,6 @@ module.exports = {
   head: [
     ['link', { rel: 'manifest ', href: '/manifest.json' }],
   ],
-  
   themeConfig: {
     lastUpdated: '最后编辑',
     
