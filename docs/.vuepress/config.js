@@ -3,10 +3,9 @@ module.exports = {
   description: '义务教育中必须背诵的古诗词',
   base: '/chinese-recite/',
   head: [
-    ['meta', { name: 'theme-color ', content: '#ffffff' }]
-    ['link', { rel: 'manifest ', href: '/manifest.json' }]
+    ['link', { rel: 'manifest ', href: '/manifest.json' }],
   ],
-  plugins: ['@vuepress/pwa'],
+  
   themeConfig: {
     lastUpdated: '最后编辑',
     
