@@ -3,12 +3,20 @@ module.exports = {
   description: '义务教育中必须背诵的古诗词，高中必背古诗词',
   base: '/chinese-recite/',
   head: [
-    ['link', { rel: 'manifest ', href: '/manifest.json' }],
+    ['link', {
+      rel: 'manifest ',
+      href: '/manifest.json'
+    }],
   ],
-  plugins: ['@vuepress/blog'],
+  plugins: [
+    '@vuepress/blog',
+    '@vuepress/pwa', {
+      serviceWorker: true,
+    }
+  ],
   themeConfig: {
     lastUpdated: '最后编辑',
-    
+
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'tncee/chinese-recite',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
@@ -33,31 +41,30 @@ module.exports = {
     }, ],
     sidebar: 'auto',
     sidebar: {
-      '/senior/': [
-      {
-        title: '必修二',
-        collapsable: false,
-        children: [
-          '/senior/compulsory2/氓',
-          '/senior/compulsory2/采薇',
-          '/senior/compulsory2/离骚',
-        ]
-      },
-      {
-        title: '必修三',
-        collapsable: false,
-      },
-      {
-        title: '必修五',
-        collapsable: false,
-        children: [
-          '/senior/compulsory5/归去来兮辞·并序',
-          '/senior/compulsory5/滕王阁序',
-          '/senior/compulsory5/逍遥游',
-          '/senior/compulsory5/陈情表',
-        ]
-      }
-    ],
+      '/senior/': [{
+          title: '必修二',
+          collapsable: false,
+          children: [
+            '/senior/compulsory2/氓',
+            '/senior/compulsory2/采薇',
+            '/senior/compulsory2/离骚',
+          ]
+        },
+        {
+          title: '必修三',
+          collapsable: false,
+        },
+        {
+          title: '必修五',
+          collapsable: false,
+          children: [
+            '/senior/compulsory5/归去来兮辞·并序',
+            '/senior/compulsory5/滕王阁序',
+            '/senior/compulsory5/逍遥游',
+            '/senior/compulsory5/陈情表',
+          ]
+        }
+      ],
     },
   },
 }
