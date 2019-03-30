@@ -1,6 +1,6 @@
 module.exports = {
   title: '必背古诗词',
-  description: '义务教育中必须背诵的古诗词',
+  description: '义务教育中必须背诵的古诗词，高中必背古诗词',
   base: '/chinese-recite/',
   head: [
     ['link', { rel: 'manifest ', href: '/manifest.json' }],
