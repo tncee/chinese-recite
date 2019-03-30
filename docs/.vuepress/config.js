@@ -5,6 +5,7 @@ module.exports = {
   head: [
     ['link', { rel: 'manifest ', href: '/manifest.json' }],
   ],
+  plugins: ['@vuepress/blog'],
   themeConfig: {
     lastUpdated: '最后编辑',
     
